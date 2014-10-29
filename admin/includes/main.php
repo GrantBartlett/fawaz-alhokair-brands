@@ -72,7 +72,7 @@ ob_start();?>
                                 <td><?php echo $v->post_title;?><br>ID: <?php echo $v->ID;?></td>
                                 <td><input name="fawazbrands_settings_data[<?php echo $v->ID;?>][brand][total]" type="number" value="<?php echo $fawazbrands_options_data[$v->ID]['brand']['total']; ?>"></td>
                                 <td>
-                                   <select name="fawazbrands_settings_data[<?php echo $v->ID;?>][brand][country][]" multiple="multiple" style="width:100%;">
+                                   <select name="fawazbrands_settings_data[<?php echo $v->ID;?>][brand][country][]" multiple="multiple" style="height:310px;width:100%;">
                                        <?php
                                            $countrySelected[$k] = $fawazbrands_options_data[$v->ID]['brand']['country'];
 
