@@ -103,18 +103,6 @@
         add_menu_page( 'Brands', 'Brands','manage_options','manage-alhokair-brands','fawazbrands_options_page', 'dashicons-smiley' );
     }
 
-
-    /**
-     * Options Menu
-     * Adding options link for admin plugin management
-     */
-
-    function fawazbrands_add_options_link()
-    {
-        add_options_page( 'Brands', 'Manage Brands 2','manage_options','manage-alhokair-brands','fawazbrands_options_page-2' );
-    }
-
-
     /**
      * Register All Settings
      * Settings must be specified here.
@@ -145,7 +133,6 @@
 
     add_action( 'init', 'fawazbrands_init' );
     add_action('admin_init', 'fawazbrands_register_settings');
-    add_action('admin_menu', 'fawazbrands_add_options_link');
     add_action('admin_menu', 'fawazbrands_add_menu_page');
     add_action('admin_enqueue_scripts', 'fawazbrands_include_stylesheets');
     add_action( 'admin_enqueue_scripts', 'fawazbrands_enqueue_color_picker' );
