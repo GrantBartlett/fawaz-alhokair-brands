@@ -176,11 +176,7 @@ ob_start();?>
             $(this).iris('show');
         });
     });
-
     $ = jQuery;
-    $("#js_total_countries").html(<?php echo $js_total_countries ?>);
-    $("#js_total_stores").html(<?php echo $js_total_stores ?>);
-    $("#js_total_brands").html(<?php echo $js_total_brands ?>);
 </script>
 
 
